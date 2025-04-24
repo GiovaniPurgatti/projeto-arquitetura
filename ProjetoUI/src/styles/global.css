@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  transition: all 0.3s ease;
+}
+
+/* Tema escuro */
+[data-theme='dark'] {
+  background-color: #141414;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+[data-theme='dark'] .ant-layout {
+  background-color: #141414;
+}
+
+[data-theme='dark'] .ant-layout-content {
+  background-color: #141414;
+}
+
+[data-theme='dark'] .ant-table {
+  background-color: #1f1f1f;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+[data-theme='dark'] .ant-table-thead > tr > th {
+  background-color: #1f1f1f;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+[data-theme='dark'] .ant-table-tbody > tr > td {
+  border-bottom: 1px solid #303030;
+}
+
+[data-theme='dark'] .ant-modal-content,
+[data-theme='dark'] .ant-modal-header {
+  background-color: #1f1f1f;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+[data-theme='dark'] .ant-form-item-label > label {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+[data-theme='dark'] .ant-input,
+[data-theme='dark'] .ant-picker {
+  background-color: #141414;
+  border-color: #434343;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* Tema claro */
+[data-theme='light'] {
+  background-color: #ffffff;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+[data-theme='light'] .ant-layout {
+  background-color: #ffffff;
+}
+
+[data-theme='light'] .ant-layout-content {
+  background-color: #ffffff;
+}
+
+/* Estilos do switch de tema */
+.theme-switch {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+}
+
+/* Estilos gerais */
+.ant-layout {
+  min-height: 100vh;
+}
+
+.ant-layout-content {
+  padding: 24px;
+  min-height: calc(100vh - 48px);
+} 
