@@ -1,0 +1,25 @@
+version: "3.6"
+
+services:
+  mongodb:
+    image: mongo:6
+    container_name: APIDockers
+    ports:
+      - "27070:27017"
+    networks:
+      - app_network
+
+  apiusersmongo:
+    build: .
+    container_name: apidockermongodb
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mongodb
+    networks:
+      - app_network
+
+
+networks:
+  app_network:
+    driver: bridge
